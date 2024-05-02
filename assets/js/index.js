@@ -2,7 +2,6 @@ const button = document.querySelector("button");
 let optionSelected = null;
 
 function selectRatingItem(e) {
-  console.log(e.target.parentElement);
   const index = e.target.parentElement.dataset.id;
   if (index) {
     const items = Array.from(document.querySelectorAll("li"));
