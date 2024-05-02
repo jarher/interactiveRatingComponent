@@ -1,13 +1,30 @@
 .thankyou-state-section {
   display: none;
+  padding: 2rem 1rem;
 }
 .thankyou-state-section header {
+  text-align: center;
 }
 .thankyou-state-section header img {
+  height: 6.3rem;
 }
 .rating-selected-warning {
+  background-color: hsl(216deg 12% 54% / 18%);
+  color: var(--Orange);
+  padding: 0.5rem 0.7rem;
+  width: fit-content;
+  margin: 1.5rem auto auto;
+  border-radius: 1rem;
+  font-size: 0.95rem;
 }
 .thankyou-state-section header h1 {
+  color: var(--White);
+  margin: 1.7rem auto 1rem;
 }
-.thankyou-state-section p {
+.thankyou-state-section > p {
+  color: var(--Light-Grey);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin: 0;
+  text-align: center;
 }

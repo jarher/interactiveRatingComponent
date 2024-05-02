@@ -1,4 +1,7 @@
-document.addEventListener("click", (e) => {
+const button = document.querySelector("button");
+let optionSelected = null;
+
+function selectRatingItem(e) {
   const index = e.target.parentElement.dataset.id;
   if (index) {
     const items = Array.from(document.querySelectorAll("li"));
@@ -7,6 +10,33 @@ document.addEventListener("click", (e) => {
         element.classList.remove("rating-selected");
       }
     });
-    items[index].classList.add("rating-selected");
+    items[index - 1].classList.add("rating-selected");
+    button.disabled = false;
   }
+  return index;
+}
+
+function changeSection(option) {
+  try {
+    if (!option) throw "You must you must rate first before sending response";
+    const ratingSection = document.querySelector(".rating-state-section");
+    const thankyouSection = document.querySelector(".thankyou-state-section");
+    document.querySelector(".rating-number-selected").innerText = option;
+    ratingSection.style.opacity = 0;
+    setTimeout(() => {
+      ratingSection.style.display = "none";
+      thankyouSection.style.display = "block";
+    }, 300);
+  } catch (error) {
+    alert(error);
+    button.disabled = true;
+  }
+}
+
+document.addEventListener("click", (e) => {
+  optionSelected = selectRatingItem(e);
+});
+
+button.addEventListener("click", (e) => {
+  changeSection(optionSelected);
 });

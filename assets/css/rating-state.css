@@ -1,5 +1,10 @@
+.rating-state-section {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  padding: 1.7rem 1.5rem;
+}
 .rating-state-section header figure {
-  background-color: hsl(216, 12%, 54%, 15%);
+  background-color: hsl(216, 12%, 54%, 10%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -14,17 +19,19 @@
 }
 .rating-state-section header h1 {
   color: var(--White);
+  margin: 1.5rem 0 0.9rem;
 }
 .rating-state-section p {
   color: var(--Light-Grey);
   font-size: 0.9rem;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
+  margin: 0;
 }
 .rating-items-content {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: 2rem 0 0;
 }
 .rating-items-content li {
   position: relative;
@@ -52,11 +59,13 @@
   transition: stroke-width 0.9s, stroke-dashoffset 0.9s, stroke-dasharray 0.9s;
 }
 .rating-items-content li span {
-  transform: translateX(0%) translateY(-185%);
+  transform: translateX(0%) translateY(-195%);
   color: var(--Light-Grey);
   display: block;
   transition: all 0.3s ease-in-out;
   transition-delay: 0.3s;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 .rating-items-content li:hover svg {
   background-color: var(--Orange);

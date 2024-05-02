@@ -27,7 +27,6 @@ section {
   background-color: hsla(213, 19%, 18%, 70%);
   width: 85%;
   border-radius: 1rem;
-  padding: 1.3rem;
 }
 circle {
   fill: var(--Medium-Grey);
