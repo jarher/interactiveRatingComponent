@@ -31,3 +31,9 @@ section {
 circle {
   fill: var(--Medium-Grey);
 }
+@media (min-width: 600px) {
+  section {
+    width: 23rem;
+    border-radius: 1.5rem;
+  }
+}

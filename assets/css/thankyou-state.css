@@ -28,3 +28,21 @@
   margin: 0;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .thankyou-state-section {
+    padding: 2rem 1.6rem;
+  }
+  .rating-selected-warning {
+    padding: 0.45rem 1rem;
+    line-height: 0.85rem;
+    margin: 1.5rem auto auto;
+    font-size: 0.85rem;
+  }
+  .thankyou-state-section header h1 {
+    margin-bottom: 0.5rem;
+  }
+  .thankyou-state-section > p {
+    font-size: 0.87rem;
+    line-height: 1.35rem;
+  }
+}

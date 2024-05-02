@@ -2,6 +2,7 @@ const button = document.querySelector("button");
 let optionSelected = null;
 
 function selectRatingItem(e) {
+  console.log(e.target.parentElement);
   const index = e.target.parentElement.dataset.id;
   if (index) {
     const items = Array.from(document.querySelectorAll("li"));
@@ -18,7 +19,7 @@ function selectRatingItem(e) {
 
 function changeSection(option) {
   try {
-    if (!option) throw "You must you must rate first before sending response";
+    if (!option) throw "you must rate first before sending response";
     const ratingSection = document.querySelector(".rating-state-section");
     const thankyouSection = document.querySelector(".thankyou-state-section");
     document.querySelector(".rating-number-selected").innerText = option;

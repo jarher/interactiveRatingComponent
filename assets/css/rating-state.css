@@ -39,6 +39,7 @@
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
+  height: 2.7rem;
 }
 .rating-items-content li svg {
   position: relative;
@@ -59,13 +60,14 @@
   transition: stroke-width 0.9s, stroke-dashoffset 0.9s, stroke-dasharray 0.9s;
 }
 .rating-items-content li span {
-  transform: translateX(0%) translateY(-195%);
+  transform: translateX(0%) translateY(-85%);
   color: var(--Light-Grey);
   display: block;
   transition: all 0.3s ease-in-out;
   transition-delay: 0.3s;
   font-size: 0.9rem;
   font-weight: 700;
+  height: 2.7rem;
 }
 .rating-items-content li:hover svg {
   background-color: var(--Orange);
@@ -102,12 +104,12 @@
   padding: 1rem;
   border: none;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.2rem;
   color: var(--White);
   cursor: pointer;
   text-transform: uppercase;
-  margin: 0;
+  margin: 1.4rem 0 0;
   transition: all 0.3s ease-in-out;
 }
 .rating-state-section button:hover {
@@ -122,4 +124,24 @@
 }
 .rating-selected span {
   color: var(--White) !important;
+}
+@media (min-width: 1024px) {
+  .rating-state-section {
+    padding: 1.7rem;
+  }
+
+  .rating-state-section header h1 {
+    margin: 1.8rem 0 0.5rem;
+  }
+  .rating-state-section p {
+    font-size: 0.85rem;
+  }
+  .rating-items-content {
+    margin-top: 1.6rem;
+  }
+  .rating-state-section button {
+    padding: 0.85rem;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
 }
