@@ -1,21 +1,34 @@
 @import url("./vars.css");
+@import url("./rating-state.css");
+@import url("./thankyou-state.css");
 @font-face {
   font-family: "Overpass";
   src: url("../fonts/Overpass-VariableFont_wght.ttf");
 }
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 html {
   font-family: "Overpass";
+  font-size: var(--size);
 }
 body {
+  padding: 0;
+  margin: 0;
 }
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-Dark-Blue);
+  height: 100vh;
 }
-.rating-state-section {
+section {
+  background-color: hsla(213, 19%, 18%, 70%);
+  width: 85%;
+  border-radius: 1rem;
+  padding: 1.3rem;
 }
-.thankyou-state-section {
+circle {
+  fill: var(--Medium-Grey);
 }

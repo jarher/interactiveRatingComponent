@@ -14,12 +14,9 @@
   <main>
     <section class="rating-state-section">
       <header>
-        <div class="svg-container">
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="50" />
-          </svg>
-          <img src="./assets/images/icon-star.svg" />
-        </div>
+        <figure class="circle">
+          <img src="./assets/images/icon-star.svg" alt="star logo" />
+        </figure>
         <h1>How did we do?</h1>
       </header>
       <p>
@@ -27,33 +24,33 @@
         to help us improve our offering!
       </p>
       <ul class="rating-items-content">
-        <li>
+        <li aria-label="rating number one" data-id="0">
           <svg xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="50" />
-            <span>1</span>
+            <circle cx="20" cy="20" r="20" />
           </svg>
+          <span>1</span>
         </li>
-        <li>
+        <li aria-label="rating number two" data-id="1">
           <svg xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="50" />
-            <span>2</span>
+            <circle cx="20" cy="20" r="20" />
           </svg>
+          <span>2</span>
         </li>
-        <li>
+        <li aria-label="rating number three" data-id="2">
           <svg xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="50" />
-            <span>3</span>
+            <circle cx="20" cy="20" r="20" />
           </svg>
+          <span>3</span>
         </li>
-        <li>
+        <li aria-label="rating number four" data-id="3">
           <svg xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="50" />
-            <span>4</span>
+            <circle cx="20" cy="20" r="20" />
           </svg>
+          <span>4</span>
         </li>
-        <li>
+        <li aria-label="rating number five" data-id="4">
           <svg xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="50" />
+            <circle cx="20" cy="20" r="20" />
             <span>5</span>
           </svg>
         </li>
@@ -70,6 +67,7 @@
         don’t hesitate to get in touch!</p>
     </section>
   </main>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,116 @@
+.rating-state-section header figure {
+  background-color: hsl(216, 12%, 54%, 15%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  margin: 0;
+  height: 2.6rem;
+}
+.rating-state-section header figure img {
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.rating-state-section header h1 {
+  color: var(--White);
+}
+.rating-state-section p {
+  color: var(--Light-Grey);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.rating-items-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.rating-items-content li {
+  position: relative;
+  list-style-type: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.rating-items-content li svg {
+  position: relative;
+  border-radius: 50%;
+  background-color: hsl(216, 12%, 54%, 15%);
+  height: 2.7rem;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  width: 2.7rem;
+}
+.rating-items-content li svg circle {
+  fill: transparent;
+  stroke: hsl(216, 12%, 54%, 15%);
+  stroke-dasharray: 120;
+  stroke-dashoffset: -122;
+  stroke-width: 1px;
+  transition: stroke-width 0.9s, stroke-dashoffset 0.9s, stroke-dasharray 0.9s;
+}
+.rating-items-content li span {
+  transform: translateX(0%) translateY(-185%);
+  color: var(--Light-Grey);
+  display: block;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+.rating-items-content li:hover svg {
+  background-color: var(--Orange);
+}
+.rating-items-content li:hover svg circle {
+  stroke: var(--Orange);
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+.rating-items-content li:hover span {
+  color: var(--White);
+}
+.rating-items-content li:active svg {
+  animation-name: shadowEffect;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes shadowEffect {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 10px 5px var(--Orange);
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+.rating-state-section button {
+  width: 100%;
+  border-radius: 2rem;
+  background-color: var(--Orange);
+  padding: 1rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: var(--White);
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.rating-state-section button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.rating-selected svg {
+  background-color: var(--Light-Grey) !important;
+}
+.rating-selected svg circle {
+  stroke: transparent !important;
+}
+.rating-selected span {
+  color: var(--White) !important;
+}
